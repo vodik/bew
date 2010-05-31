@@ -24,5 +24,5 @@ sine_init(base_module_t *m, float val)
 
 	m->work = sine_work;
 	sm->phase = 0;
-	sm->step = 2.0 * M_PI / 1000.0 * 4400 / val;
+	sm->step = 2.0 * M_PI * val / 48000.0f;
 }
